@@ -153,7 +153,7 @@ nav ul li:last-child {
     font-size: 24px;
     color: #004d40;
     position: relative;
-    animation: moveText 10s linear infinite; 
+    animation: moveText 20s linear infinite; 
 }
 
 @keyframes moveText {
