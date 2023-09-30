@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <title>Indian Railway</title>
+    
 </head>
 <body>
     <header>
@@ -12,12 +13,20 @@
         <p>Your Trusted Rail Network</p>
         <img class="ashok" src="ashok.png" alt="Girl in a jacket">
         <img class="ashok1" src="g20.png" alt="Girl in a jacket">
+        <div class="language-selector">
+            <label for="language-dropdown">Select Language:</label>
+            <select id="language-dropdown">
+                <option value="english">English</option>
+                <option value="hindi">hindi</option>
+                <option value="gujrati">Gujrati</option>
+            </select>
+        </div>
     </header>
     <nav>
         <ul>
             <button><a class="menuu"href="#">Home</a></button>
-            <button><a class="menuu"href="#">Lost People Report</a></button>
-            <button><a class="menuu"href="#">Lost Luggage Report</a></button>
+            <button><a class="menuu"href="#person">Lost People Report</a></button>
+            <button><a class="menuu"href="#luggage">Lost Luggage Report</a></button>
             <button><a class="menuu"href="#">PNR Enquiry</a></button>
             <button><a class="menuu"href="#">Seat Available</a></button>
             <button><a class="menuu"href="#">Login</a></button>
@@ -116,7 +125,7 @@
 
 
     <div class="container">
-        <div class="section">
+        <div class="section" id="person"> 
             <h2>Lost People Report</h2>
             <form>
                 <input type="text" placeholder="Name">
@@ -125,7 +134,7 @@
             </form>
         </div>
 
-        <div class="section">
+        <div class="section" id="luggage">
             <h2>Lost Luggage Report</h2>
             <form>
                 <input type="text" placeholder="Name">
